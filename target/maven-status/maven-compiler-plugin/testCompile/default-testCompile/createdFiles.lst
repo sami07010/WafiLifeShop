@@ -1,0 +1,8 @@
+pages\BasePage.class
+pages\WasiLifeBookDetails.class
+pages\DewanNasirUddinBook.class
+pages\WasiLifeCheckOut.class
+pages\WasiLifeAutorPage.class
+pages\WasiLifeHomePage.class
+testcases\WasiLifeTest.class
+utilities\BaseDriverSetup.class
