@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import pages.DewanNasirUddinBook;
+import pages.DiponkorChandraDatta;
 import pages.WasiLifeAutorPage;
 import pages.WasiLifeBookDetails;
 import pages.WasiLifeCheckOut;
@@ -17,7 +17,7 @@ public class WasiLifeTest extends BaseDriverSetup{
 	//JavaClass      Object              = new JavaClass();
 	WasiLifeHomePage wasiLifeHomePageObj = new WasiLifeHomePage();
 	WasiLifeAutorPage wasiLifeAutorPageCousin = new WasiLifeAutorPage();
-	DewanNasirUddinBook ObjdewanNasirUddinBook = new DewanNasirUddinBook();
+	DiponkorChandraDatta diponkorChandraBook = new DiponkorChandraDatta();
 	WasiLifeBookDetails objWasiLifeBookDetails = new WasiLifeBookDetails();
 	WasiLifeCheckOut objWasiLifeCheckOut = new WasiLifeCheckOut();
 	@Test
@@ -54,7 +54,7 @@ public class WasiLifeTest extends BaseDriverSetup{
 		Thread.sleep(5000);
 		
 //		View any Book Details
-		ObjdewanNasirUddinBook.clickOnElement(ObjdewanNasirUddinBook.PHYSICS_1ST_PAPER);
+		diponkorChandraBook.clickOnElement(diponkorChandraBook.CRITICAL_REVIEW_ON_ENG);
 		Thread.sleep(5000);
 		
 //		Click অর্ডার করুন
@@ -93,43 +93,23 @@ public class WasiLifeTest extends BaseDriverSetup{
 		objWasiLifeCheckOut.clickOnElement(objWasiLifeCheckOut.DIVISION_DROPDOWN);
 		Thread.sleep(5000);
 		
-		objWasiLifeCheckOut.selectElementWithText(objWasiLifeCheckOut.DIVISION_TEXT_FIELD, "Dhaka");
+		objWasiLifeCheckOut.selectElementWithText(objWasiLifeCheckOut.DIVISION_TEXT_FIELD, "Chatto");
 		Thread.sleep(5000);
 		
-//		objWasiLifeCheckOut.clickOnElement(objWasiLifeCheckOut.DHAKA_DIVISION);
-//		Thread.sleep(5000);
 		
-		objWasiLifeCheckOut.writeText(objWasiLifeCheckOut.AREA, "Bashundhara");
-		Thread.sleep(5000);
-		
-		objWasiLifeCheckOut.scrollToElemnt(objWasiLifeCheckOut.BASHUNDHARA);
-        Thread.sleep(5000);
-		
-		objWasiLifeCheckOut.clickOnElement(objWasiLifeCheckOut.BASHUNDHARA);
-		Thread.sleep(5000);
-		
-	//	Select select = new Select(getDriver().findElement(By.xpath("//select[@id='billing_area']")));
-		//select.selectByVisibleText("কিশোরগঞ্জ সদর");
-		//Thread.sleep(3000);
+	    Select select = new Select(getDriver().findElement(By.xpath("//select[@id='billing_area']")));
+		select.selectByVisibleText("হালিশহর");
+		Thread.sleep(3000);
 		
 		
 		objWasiLifeCheckOut.clickOnElement(objWasiLifeCheckOut.ADDRESS);
 		Thread.sleep(5000);
 		
-		objWasiLifeCheckOut.writeText(objWasiLifeCheckOut.PRODUCT_COMMENT, "Send me safely, handle with care");
+		objWasiLifeCheckOut.writeText(objWasiLifeCheckOut.PRODUCT_COMMENT, "Handle with care");
 
 		Thread.sleep(5000);
 		
-//		objWasiLifeCheckOut.clickOnElement(objWasiLifeCheckOut.PLACE_ORDER);
-//		Thread.sleep(5000);
-		
-//		objWasiLifeCheckOut.writeText(objWasiLifeCheckOut.SHIP_TO_DIFFERENT_PLACE,);
-//		Thread.sleep(5000);
-//		objWasiLifeCheckOut.clickOnElement(objWasiLifeCheckOut.NAME_SHIPPING);
-//		Thread.sleep(5000);
-//		objWasiLifeCheckOut.clickOnElement(objWasiLifeCheckOut.PHONE_SHIPPING);
-//		Thread.sleep(5000);
-		
+
 		
 	}
 	
